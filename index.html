@@ -1,0 +1,235 @@
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>
+<title>COIN: COmmonsense INference in Natural Language Processing</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<style>
+/* Customize container */
+@media (min-width: 968px) {
+  .container {
+    max-width: 968px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* Customize dropdown menu */
+.dropdown {
+ cursor: pointer;
+}
+.dropdown sup {
+ color: rgb(66, 139, 202);
+}
+.dropdown sup:hover, .dropdown sup:focus {
+    color: rgb(42, 100, 150);
+    text-decoration: underline;
+}
+.dropdown-menu {
+  min-width: 500px;
+  left: -200px;
+}
+.dropdown-menu li {
+margin-bottom: .5em; 
+/*border-top-style:solid; padding-left:10px;*/
+}
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="70" onload="load()">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">COIN</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!--li><a href="#speakers">Invited Speakers</a></li-->
+            <li><a href="#call">Call</a></li>
+            <li><a href="#dates">Dates</a></li>
+            <!--li><a href="#accepted">Papers</a></li-->
+            <li><a href="#committee">Committee</a></li>
+           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.emnlp-ijcnlp2019.org/">EMNLP-IJCNLP 2019</a></li>
+            <!--li><a href="../navbar-static-top/">Static top</a></li-->
+            <!--li class="active"><a href="./">Fixed top</a></li-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+<br/>
+<br/>
+
+<br/>
+<center><h2 id="top"><b>COIN: COmmonsense INference in Natural Language Processing</b></h2></center>
+<center><h4>Workshop to be held in conjunction with EMNLP-IJCNLP in Hong Kong</h4></center>
+<br/>
+
+<br/>
+<div class="alert alert-success" role="alert">
+<strong>Update 01/2019:</strong> The workshop has been accepted and will take place with EMNLP-IJCNLP 2019 in Hong Kong! Details are updated below.
+</div>
+
+<p>Research in natural language understanding and textual inference has advanced considerably in recent years, resulting in powerful models that are able to read and understand texts, even outperforming humans in some cases. However, it remains challenging to answer questions that go beyond the texts themselves, requiring the use of additional commonsense knowledge. Previous work has explored using both explicit representations of background knowledge (e.g., <a href="http://conceptnet.io/">ConceptNet</a> or <a href="http://rtw.ml.cmu.edu/rtw/">NELL</a>), and latent representations that capture some aspects of commonsense (e.g., <a href="https://blog.openai.com/language-unsupervised/">OpenAI GPT</a>). These and any other methods for representing and using commonsense in NLP are of interest to this workshop.</p>
+
+<p>The COIN workshop aims at bringing together researchers that are interested in modeling commonsense knowledge, developing computational models thereof, and applying commonsense inference methods in NLP tasks. We are interested in any type of commonsense knowledge representation, and explicitly encourage work that makes use of knowledge bases and approaches developed to mine or learn commonsense from other sources. The workshop is also open for evaluation proposals that explore new ways of evaluating methods of commonsense inference, going beyond established natural language processing tasks.</p>
+
+<h4>Shared task</h4>
+<p>As part of the workshop, we plan to organize a shared task on Machine Comprehension using Commonsense Knowledge. In contrast to other machine comprehension tasks (and workshops), our focus will be on inferences over commonsense knowledge about events and participants as required for text understanding. We plan to offer two tracks: one on everyday scenarios and one on news events. The first track is based on a revised and extended version of SemEval 2018 Task 18 (<a href="https://competitions.codalab.org/competitions/17184">Ostermann et al., 2018</a>). The other track is based on the recent ReCoRD dataset (<a href="https://arxiv.org/abs/1810.12885">Zhang et al., 2018</a>). Both tracks focus on questions about events or participants of the story that are not explicitly mentioned in the text, thus explicitly requiring task participants to come up with approaches that use the narrative context and commonsense knowledge to draw suitable inferences. The data for the shared task is currently in the process of creation and will be available shortly.</p>
+
+<!--a name="speakers"></a>
+<br/>
+<div class="page-header">
+  <h1>Invited Speakers</h1>
+</div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+		To be confirmed
+	      </h2>
+            </div>
+            <div class="panel-body">
+
+            </div>            
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+		To be confirmed
+	      </h2>
+            </div>
+            <div class="panel-body">
+
+            </div>
+          </div>
+          <!--div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                Additional speaker(s)</h2><i>to be confirmed</i>
+            </div>
+            <div class="panel-body">
+              TBA
+            </div>
+        </div>
+    </div-->
+
+<!--a name="program"></a>
+<div class="page-header">
+  <h1>Workshop Program</h1>
+</div-->
+
+<a name="call"></a>
+<div class="page-header">
+  <h1>Call for Submissions</h1>
+</div>
+<p>We invite both long (8 pages) and short (4 page) papers. The limits refer to
+the content and any number of additional pages for references are allowed. The
+papers should follow the EMNLP-IJCNLP 2019 formatting instructions (TBA).
+
+<p>Each submission must be anonymized, written in English, and contain a title and
+abstract. We especially welcome the following types of papers:</p>
+
+<ul>
+<li>Position papers that reflect innovative, creative and thought-provoking ideas</li>
+<li>Technical papers that demonstrate the impact of commonsense knowledge in tasks and applications</li>
+<li>Theoretical papers that advance our understanding of commonsense inferences</li>
+<li>Survey papers that review the current state of research in a specific area</li>
+</ul>
+
+<p>Please submit your papers at <a href="about:blank">http://www.softconf.com/TODO/</a></p>
+
+<a name="dates"></a>
+<div class="page-header">
+  <h1>Tentative Dates</h1>
+</div>
+<ul>
+  <li>May 10, 2019: First Call for Workshop Papers</li>
+  <li>June 14, 2019: Second Call for Workshop Papers</li>
+  <li>July 19, 2019: Workshop Paper Due Date</li>
+  <li>August 16, 2019: Notification of Acceptance</li>
+  <li>September 6, 2019: Camera-ready papers due</li>
+  <li>November 3/4, 2019: Workshop Date</li>
+</ul>
+
+All deadlines refer to 11:59pm Pacific Daylight Savings Time (UTC/GMT -7 hours).
+
+
+<a name="committee"></a>
+<div class="page-header">
+  <h1>Organizers</h1>
+</div>
+<ul class="list-unstyled">
+<li><a target="_blank" href="http://allenai.org/team/peterc/">Peter Clark</a>, Allen Institute for AI</li>
+<li><a target="_blank" href="http://www.coli.uni-saarland.de/~simono/">Simon Ostermann</a>, Saarland University</li>
+<li><a target="_blank" href="http://www.coli.uni-saarland.de/~mroth/">Michael Roth</a>, Saarland University / University of Stuttgart</li>
+<li><a target="_blank" href="http://blog.conceptnet.io/">Robyn Speer</a>, Luminoso Technologies, Inc.</li>
+<li><a target="_blank" href="http://www.cs.jhu.edu/~s.zhang/">Sheng Zhang</a>, Johns Hopkins University</li>
+</ul>
+  
+<h3>Program Committee<a name="committee" ></a></h3>
+
+<ul class="list-unstyled">
+<li><a target="_blank" href="http://researcher.watson.ibm.com/researcher/view.php?person=us-kjbarker">Ken Barker</a>, IBM Research</li>
+<li><a target="_blank" href="http://yonatanbisk.com/">Yonatan Bisk</a>, University of Washington</li>
+<li><a target="_blank" href="http://www.usna.edu/Users/cs/nchamber/">Nate Chambers</a>, United States Naval Academy</li>
+<li><a target="_blank" href="http://www.isi.edu/~hans/">Hans Chalupsky</a>, USC Information Sciences Institute</li>
+<li><a target="_blank" href="http://www.uni-saarland.de/lehrstuhl/demberg/members/team.html">Vera Demberg</a>, Saarland University</li>
+<li><a target="_blank" href="http://www.cl.uni-heidelberg.de/~frank/">Anette Frank</a>, Heidelberg University</li> 
+<li><a target="_blank" href="http://people.ict.usc.edu/~gordon/">Andrew S. Gordon</a>, University of Southern California</li>
+<li><a target="_blank" href="http://www.cs.vassar.edu/~jgordon/">Jonathan Gordon</a>, Vassar College</li>
+<li><a target="_blank" href="http://www.isi.edu/~hobbs/">Jerry Hobbs</a>, USC Information Sciences Institute</li>
+<li><a target="_blank" href="http://people.cs.umass.edu/~mccallum/">Andrew McCallum</a>, University of Massachusetts Amherst</li>
+<li><a target="_blank" href="http://gerard.demelo.org/">Gerard de Melo</a>, Rutgers University</li>
+<li><a target="_blank" href="http://www.mitre.org">Elizabeth Merkhofer</a>, MITRE Corporation</li>
+<li><a target="_blank" href="http://www.cl.uni-heidelberg.de/~mihaylov/">Todor Mihaylov</a>, Heidelberg University</li>
+<li><a target="_blank" href="http://www.coli.uni-saarland.de/~ashutosh/">Ashutosh Modi</a>, Disney Research</li>
+<li><a target="_blank" href="http://people.mpi-inf.mpg.de/~sreyasi/">Sreyasi Nag Chowdhury</a>, Max-Planck-Institut for Informatics</li>
+<li><a target="_blank" href="http://homes.cs.washington.edu/~hrashkin/">Hannah Rashkin</a>, University of Washington</li>
+<li><a target="_blank" href="http://allenai.org/team/nikett/">Niket Tandon</a>, Allen Institute for AI</li>
+<li><a target="_blank" href="http://www.microsoft.com/en-us/research/people/adtrisch/">Adam Trischler</a>, Microsoft Research</li>
+<li><a target="_blank" href="http://www.cs.cmu.edu/~bishan/">Bishan Yang</a>, LAER.AI</li>
+<li><a target="_blank" href="https://research.nuance.com/author/peter-yeh/">Peter Yeh</a>, Nuance Communications, Inc.</li>
+</ul>
+
+<hr>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+   <div class="footer">
+      <div class="container">
+        <p class="text-muted">Website by Michael Roth, powered by <a href="http://www.getbootstrap.com">Bootstrap</a></p>
+        <br/>
+      </div>
+    </div>
+
+</div>
+
+</body>  
+<!-- Prevent caching -->
+<HEAD>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+</HEAD>
+</html>  
