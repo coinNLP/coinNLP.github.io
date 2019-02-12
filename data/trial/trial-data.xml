@@ -1,0 +1,97 @@
+<data>
+  <instance id="0" scenario="making a camping trip">
+    <text>Camping is one of my favorite summer vacations . There are several camp grounds I like to go to , so I make sure to call ahead and reserve a campsite . Once I have a site reserved , I make my camping gear list . I need to make sure I have all the things I will need to be comfortable , like a tent to sleep in , and a sleeping bag to sleep in . And of course I 'll need to eat , so I 'll need a kerosene stove and a grill for the fire . I will also bring a camp chair so I can sit comfortably around the campfire . Along with my camping gear I 'll need to bring clothes , like hiking shoes , a bathing suit for swimming and warm clothes for the chilly nights . Once I have all my gear and clothing I 'll pack it into my car , making sure to leave room for myself , my dog and anything my friends want to bring . And then we are ready for our camping vacation .</text>
+    <questions>
+      <question id="0" text="What do they put the drinks in?" type="commonsense">
+        <answer correct="True" id="0" text="Cooler" />
+        <answer correct="False" id="1" text="sleeping bag" />
+      </question>
+      <question id="1" text="What does it help to bring for camping" type="text">
+        <answer correct="False" id="0" text="binoculars" />
+        <answer correct="True" id="1" text="sleeping bag, camp chair, tent." />
+      </question>
+      <question id="2" text="What is in the cooler?" type="commonsense">
+        <answer correct="False" id="0" text="bathing suit" />
+        <answer correct="True" id="1" text="Drinks, meat." />
+      </question>
+      <question id="4" text="What is helped by bringing a cooler?" type="commonsense">
+        <answer correct="False" id="0" text="grill food" />
+        <answer correct="True" id="1" text="keep food cold" />
+      </question>
+      <question id="5" text="what did they put in the cooler" type="commonsense">
+        <answer correct="True" id="0" text="drinks, food" />
+        <answer correct="False" id="1" text="Clothes" />
+      </question>
+    </questions>
+  </instance>
+  <instance id="1" scenario="cooking pasta">
+    <text>When I cooked pasta last , I had a great experience . I was with my girlfriend and we were in the mood for pasta and meat sauce . In order to do this , we first picked the pasta out of the cabinet and opened up the box . As we put the pasta in , we stirred it and watched the water boil . After putting in spices and watching the pasta for about five to ten minutes , we tried one piece of pasta to see if it was soft enough to eat . Upon trying the food and enjoying the taste , we put the meat sauce on the pasta and let it get hot . Upon both the pasta and the sauce getting hot , we put it all on bowls and ate the pasta .</text>
+    <questions>
+      <question id="0" text="When did the pasta taste amazing?" type="text">
+        <answer correct="True" id="0" text="During the last time they cooked pasta" />
+        <answer correct="False" id="1" text="when they stirred and watched water boil" />
+      </question>
+      <question id="1" text="When did they put the pasta in?" type="text">
+        <answer correct="True" id="0" text="After the water boiled" />
+        <answer correct="False" id="1" text="after putting the meat sauce on the pasta" />
+      </question>
+      <question id="3" text="What did they put in?" type="text">
+        <answer correct="True" id="0" text="pasta" />
+        <answer correct="False" id="1" text="bowls" />
+      </question>
+      <question id="4" text="What was perfectly tasty and hot?" type="text">
+        <answer correct="False" id="0" text="the sausages" />
+        <answer correct="True" id="1" text="the pasta and sauce" />
+      </question>
+      <question id="5" text="When was the pasta put in?" type="text">
+        <answer correct="True" id="0" text="after they opened up the box of pasta" />
+        <answer correct="False" id="1" text="Before getting water" />
+      </question>
+      <question id="6" text="What did they say tasted amazing?" type="text">
+        <answer correct="False" id="0" text="the meat sauce" />
+        <answer correct="True" id="1" text="the pasta and sauce" />
+      </question>
+      <question id="7" text="What did they boil?" type="text">
+        <answer correct="False" id="0" text="shrimp" />
+        <answer correct="True" id="1" text="pasta" />
+      </question>
+      <question id="8" text="When was the pasta perfectly tasty and hot?" type="commonsense">
+        <answer correct="False" id="0" text="after it was microwaved" />
+        <answer correct="True" id="1" text="after it finished cooking" />
+      </question>
+      <question id="9" text="What did they put into the boiling water?" type="commonsense">
+        <answer correct="False" id="0" text="the pasta bowls" />
+        <answer correct="True" id="1" text="the uncooked pasta noodles" />
+      </question>
+    </questions>
+  </instance>
+  <instance id="2" scenario="making a shopping list">
+    <text>I need to go grocery shopping this weekend so I am in the process of making a shopping list . I 'll look through my fridge , freezer and cabinets to see what I am low on and need to restock that I use regularly ; coffee , stevia , mint tea bags , paper towels . I 'll also check to see if I need anything like shampoo or deodorant . When I get the grocery store ads and coupons in the mail I will look through to see what is on sale or what I have a coupon for and I will plan my meals based on what I can get at a good price . I will then make my list organized according to what I can get at what store . I do the majority of my shopping at one store so that will be the big chunk of the list but there are some things that I have to go to other stores for , I will put that on the other side of the paper . Once I have my list made , I 'll double check it and head out to go shopping .</text>
+    <questions>
+      <question id="1" text="What did they check to see if they already had?" type="text">
+        <answer correct="True" id="0" text="items that they use frequently" />
+        <answer correct="False" id="1" text="items that are not used regularly" />
+      </question>
+      <question id="2" text="When did they check for ingredients" type="positive-merged">
+        <answer correct="True" id="0" text="while looking through the fridge, cabinets, and freezer" />
+        <answer correct="False" id="1" text="after heading out to go shopping" />
+      </question>
+      <question id="3" text="When did they see if there are ingredients they already have?" type="positive-merged">
+        <answer correct="False" id="0" text="after heading out to go shopping" />
+        <answer correct="True" id="1" text="the first step in making the last" />
+      </question>
+      <question id="4" text="When did they figure out meals?" type="text">
+        <answer correct="False" id="0" text="after heading out to go shopping" />
+        <answer correct="True" id="1" text="When the grocery store ads and coupons come in the mail." />
+      </question>
+      <question id="5" text="What are they referring to for ingredients?" type="positive-merged">
+        <answer correct="True" id="0" text="grocery store ads and coupons" />
+        <answer correct="False" id="1" text="a cookbook" />
+      </question>
+      <question id="6" text="When did they realize what ingredients they already have?" type="positive-merged">
+        <answer correct="False" id="0" text="after heading out to go shopping" />
+        <answer correct="True" id="1" text="When looking through the fridge, freezer and cabinets" />
+      </question>
+    </questions>
+  </instance>
+</data>
