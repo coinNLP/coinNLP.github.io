@@ -1,0 +1,223 @@
+{
+    "config": {
+        "allow_multiple_models": true,
+        "allow_orphans": true,
+        "count_failed_submissions": true,
+        "evaluate": {
+            "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+            "dependencies": [
+                {
+                    "child_path": "evaluate.py",
+                    "parent_path": "",
+                    "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                },
+                {
+                    "child_path": "gold.txt",
+                    "parent_path": "",
+                    "parent_uuid": "0xa563a9b532844a688297292e624a83ee"
+                },
+                {
+                    "child_path": "pred.txt",
+                    "parent_path": "",
+                    "parent_uuid": "{predict}"
+                }
+            ],
+            "metadata": {
+                "request_docker_image": "codalab/ubuntu:1.9"
+            },
+            "tag": "COIN-WS-Evaluation"
+        },
+        "host": "https://worksheets.codalab.org",
+        "log_worksheet_uuid": "0x5cdb39ebe7f04989adb161a69a45dd8d",
+        "make_predictions_public": false,
+        "max_leaderboard_size": 10000,
+        "max_submissions_per_period": 5,
+        "max_submissions_total": 20,
+        "metadata": {
+            "name": "COIN Workshop"
+        },
+        "predict": {
+            "depth": 10,
+            "metadata": {
+                "request_network": false
+            },
+            "mimic": [
+                {
+                    "new": "0x4d281386033a4132b185cc3666ee2aac",
+                    "old": "0x304bc844855e4ba394f49ea45ef5bd1d"
+                }
+            ],
+            "tag": "COIN-WS-Prediction"
+        },
+        "quota_period_seconds": 86400,
+        "refresh_period_seconds": 60,
+        "score_specs": [
+            {
+                "key": "/scores.txt:score",
+                "name": "score"
+            }
+        ],
+        "submission_tag": "COIN-WS-Submission"
+    },
+    "leaderboard": [
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0xa563a9b532844a688297292e624a83ee pred.txt:0x6af30ba911744988b9b0ffdd2f471a3d \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0xa30f9bdae8c980fe692252437fa77bf74ed688f5",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x1be88549776b4356ac6ccea5b6e9014f",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x1be88549776b4356ac6ccea5b6e9014f",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0xa563a9b532844a688297292e624a83ee"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x1be88549776b4356ac6ccea5b6e9014f",
+                        "parent_name": "coin-predictions-test1-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x6af30ba911744988b9b0ffdd2f471a3d"
+                    }
+                ],
+                "id": "0x1be88549776b4356ac6ccea5b6e9014f",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1552608827,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0x301cf5721b014c37b27a1c00f7c73da2\", \"predict_id\": \"0x6af30ba911744988b9b0ffdd2f471a3d\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1552608943,
+                    "name": "coin-predictions-test1-results",
+                    "remote": "vm-clws-prod-gpuworker-1",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1552608929,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 6.65966892242
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x1be88549776b4356ac6ccea5b6e9014f"
+            },
+            "scores": {
+                "score": 0.7671641791044777
+            },
+            "submission": {
+                "created": 1552466493,
+                "description": "AR Baseline (single) (Saarland Uni)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "coin"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0xa563a9b532844a688297292e624a83ee pred.txt:0xff84b70c16a14524803ee54dcb6f5691 \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0x887a7d3151c2ffa35c127b76eb82127fc44b398b",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0xa563a9b532844a688297292e624a83ee"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d",
+                        "parent_name": "coin-predictions-random-baseline-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xff84b70c16a14524803ee54dcb6f5691"
+                    }
+                ],
+                "id": "0xece92977ccce4f0dae1eb3de04bd2c7d",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1549217539,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0xd2d255f163854a6db424d70eacd78ba8\", \"predict_id\": \"0xff84b70c16a14524803ee54dcb6f5691\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1549217676,
+                    "name": "coin-predictions-random-baseline-results",
+                    "remote": "vm-clws-prod-worker-4",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1549217568,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 14.5853610039
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d"
+            },
+            "scores": {
+                "score": 0.5102181400688863
+            },
+            "submission": {
+                "created": 1549217226,
+                "description": "random baseline predictions",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": false,
+                "user_name": "coin"
+            }
+        }
+    ],
+    "updated": 1552609139.498104
+}
