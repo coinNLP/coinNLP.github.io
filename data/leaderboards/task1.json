@@ -14,7 +14,7 @@
                 {
                     "child_path": "gold.txt",
                     "parent_path": "",
-                    "parent_uuid": "0xa563a9b532844a688297292e624a83ee"
+                    "parent_uuid": "0x75e282c57ca746b588f3ecbd18ae6562"
                 },
                 {
                     "child_path": "pred.txt",
@@ -43,8 +43,8 @@
             },
             "mimic": [
                 {
-                    "new": "0x4d281386033a4132b185cc3666ee2aac",
-                    "old": "0x304bc844855e4ba394f49ea45ef5bd1d"
+                    "new": "0x5b303169f3bc45e297e32584e3258587",
+                    "old": "0x5b303169f3bc45e297e32584e3258587"
                 }
             ],
             "tag": "COIN-WS-Prediction"
@@ -62,45 +62,45 @@
     "leaderboard": [
         {
             "bundle": {
-                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0xa563a9b532844a688297292e624a83ee pred.txt:0x6af30ba911744988b9b0ffdd2f471a3d \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x75e282c57ca746b588f3ecbd18ae6562 pred.txt:0x6acf5146d8ab44d6bf605d84f2b6a41f \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py --gold gold.txt --pred pred.txt",
-                "data_hash": "0xa30f9bdae8c980fe692252437fa77bf74ed688f5",
+                "data_hash": "0x2b46945e67fba4ef9806af02aae2777a9e1c8ee0",
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0x1be88549776b4356ac6ccea5b6e9014f",
+                        "child_uuid": "0x625de28da1964f588238b660e45ba9aa",
                         "parent_name": "evaluation.py",
                         "parent_path": "",
                         "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
                     },
                     {
                         "child_path": "gold.txt",
-                        "child_uuid": "0x1be88549776b4356ac6ccea5b6e9014f",
-                        "parent_name": "test.answer.txt",
+                        "child_uuid": "0x625de28da1964f588238b660e45ba9aa",
+                        "parent_name": "dev.answer.txt",
                         "parent_path": "",
-                        "parent_uuid": "0xa563a9b532844a688297292e624a83ee"
+                        "parent_uuid": "0x75e282c57ca746b588f3ecbd18ae6562"
                     },
                     {
                         "child_path": "pred.txt",
-                        "child_uuid": "0x1be88549776b4356ac6ccea5b6e9014f",
-                        "parent_name": "coin-predictions-test1-predict",
+                        "child_uuid": "0x625de28da1964f588238b660e45ba9aa",
+                        "parent_name": "coin-predictions-baseline-attentive-reader-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x6af30ba911744988b9b0ffdd2f471a3d"
+                        "parent_uuid": "0x6acf5146d8ab44d6bf605d84f2b6a41f"
                     }
                 ],
-                "id": "0x1be88549776b4356ac6ccea5b6e9014f",
+                "id": "0x625de28da1964f588238b660e45ba9aa",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1552608827,
-                    "data_size": 4125,
-                    "description": "{\"submit_id\": \"0x301cf5721b014c37b27a1c00f7c73da2\", \"predict_id\": \"0x6af30ba911744988b9b0ffdd2f471a3d\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
+                    "created": 1553689642,
+                    "data_size": 4124,
+                    "description": "{\"submit_id\": \"0x416f97c370c543bdac3e0c3d5172a3c2\", \"predict_id\": \"0x6acf5146d8ab44d6bf605d84f2b6a41f\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
-                    "last_updated": 1552608943,
-                    "name": "coin-predictions-test1-results",
+                    "last_updated": 1553689991,
+                    "name": "coin-predictions-baseline-attentive-reader-results",
                     "remote": "vm-clws-prod-gpuworker-1",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -112,11 +112,11 @@
                     "request_queue": "",
                     "request_time": "",
                     "run_status": "Finished",
-                    "started": 1552608929,
+                    "started": 1553689742,
                     "tags": [
                         "COIN-WS-Evaluation"
                     ],
-                    "time": 6.65966892242
+                    "time": 14.86413908
                 },
                 "owner": {
                     "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
@@ -125,99 +125,20 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "ready",
-                "uuid": "0x1be88549776b4356ac6ccea5b6e9014f"
+                "uuid": "0x625de28da1964f588238b660e45ba9aa"
             },
             "scores": {
-                "score": 0.7671641791044777
+                "score": 0.692079207920792
             },
             "submission": {
-                "created": 1552466493,
-                "description": "AR Baseline (single) (Saarland Uni)",
+                "created": 1553688794,
+                "description": "ATTENTIVE READER BASELINE (single model)",
                 "num_period_submissions": 1,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
-                "user_name": "coin"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0xa563a9b532844a688297292e624a83ee pred.txt:0xff84b70c16a14524803ee54dcb6f5691 \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
-                "bundle_type": "run",
-                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
-                "data_hash": "0x887a7d3151c2ffa35c127b76eb82127fc44b398b",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d",
-                        "parent_name": "evaluation.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
-                    },
-                    {
-                        "child_path": "gold.txt",
-                        "child_uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d",
-                        "parent_name": "test.answer.txt",
-                        "parent_path": "",
-                        "parent_uuid": "0xa563a9b532844a688297292e624a83ee"
-                    },
-                    {
-                        "child_path": "pred.txt",
-                        "child_uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d",
-                        "parent_name": "coin-predictions-random-baseline-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xff84b70c16a14524803ee54dcb6f5691"
-                    }
-                ],
-                "id": "0xece92977ccce4f0dae1eb3de04bd2c7d",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1549217539,
-                    "data_size": 4125,
-                    "description": "{\"submit_id\": \"0xd2d255f163854a6db424d70eacd78ba8\", \"predict_id\": \"0xff84b70c16a14524803ee54dcb6f5691\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exitcode": 0,
-                    "last_updated": 1549217676,
-                    "name": "coin-predictions-random-baseline-results",
-                    "remote": "vm-clws-prod-worker-4",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1549217568,
-                    "tags": [
-                        "COIN-WS-Evaluation"
-                    ],
-                    "time": 14.5853610039
-                },
-                "owner": {
-                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0xece92977ccce4f0dae1eb3de04bd2c7d"
-            },
-            "scores": {
-                "score": 0.5102181400688863
-            },
-            "submission": {
-                "created": 1549217226,
-                "description": "random baseline predictions",
-                "num_period_submissions": 1,
-                "num_total_submissions": 2,
-                "public": false,
                 "user_name": "coin"
             }
         }
     ],
-    "updated": 1552609139.498104
+    "updated": 1553690360.050337
 }
