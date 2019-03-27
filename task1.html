@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>COIN: COmmonsense INference in Natural Language Processing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Prevent caching -->
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<style>
+/* Customize container */
+@media (min-width: 968px) {
+  .container {
+    max-width: 968px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* Customize dropdown menu */
+.dropdown {
+ cursor: pointer;
+}
+.dropdown sup {
+ color: rgb(66, 139, 202);
+}
+.dropdown sup:hover, .dropdown sup:focus {
+    color: rgb(42, 100, 150);
+    text-decoration: underline;
+}
+.dropdown-menu {
+  min-width: 500px;
+  left: -200px;
+}
+.dropdown-menu li {
+  margin-bottom: .5em;
+  /*border-top-style:solid; padding-left:10px;*/
+}
+
+ol.answers {
+  padding-top: 0;
+  margin-bottom: 1em;
+}
+
+.task-example {
+  border: 2px solid #ccc;
+  padding: 1em;
+  margin: 1em;
+}
+
+.ent {
+  font-weight: bold;
+  color: #686;
+}
+
+</style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="70" onload="load()">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">COIN</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!--li><a href="#speakers">Invited Speakers</a></li
+            <li><a href="#call">Call</a></li>
+            <li><a href="#task">Shared Task</a></li>
+            <li><a href="#leaderboards">Leaderboards</a></li>
+            <li><a href="#dates">Dates</a></li>
+            li><a href="#accepted">Papers</a></li
+            <li><a href="#committee">Committee</a></li>-->
+           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.emnlp-ijcnlp2019.org/">EMNLP-IJCNLP 2019</a></li>
+            <!--li><a href="../navbar-static-top/">Static top</a></li-->
+            <!--li class="active"><a href="./">Fixed top</a></li-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+<br/>
+<br/>
+
+<br/>
+<center><h2 id="top"><b>Shared Task 1: Commonsense Inference in Everyday Stories</b></h2></center>
+<br/>
+
+
+<p>This task is a revised and extended version of SemEval 2018 Task 11 (<a href="https://competitions.codalab.org/competitions/17184">Ostermann et al., 2018</a>). The data for the task are short narrations about everyday scenarios with multiple-choice questions about them.</p>
+<p>Example:</p>
+<div class="task-example">
+<p><strong>Prompt:</strong>
+
+I need to go grocery shopping this weekend so I am in the process of making a
+shopping list. I'll look through my fridge, freezer and cabinets to see what
+I am low on and need to restock that I use regularly; coffee, stevia, mint
+tea bags, paper towels. I'll also check to see if I need anything like
+shampoo or deodorant. When I get the grocery store ads and coupons in the mail
+I will look through to see what is on sale or what I have a coupon for and I
+will plan my meals based on what I can get at a good price. I will then make
+my list organized according to what I can get at what store. I do the majority
+of my shopping at one store so that will be the big chunk of the list but there
+are some things that I have to go to other stores for, I will put that on the
+other side of the paper. Once I have my list made, I'll double check it and
+head out to go shopping.
+</p>
+
+<p><strong>Questions:</strong></p>
+<ol class="questions">
+<li>
+  <p>What did they check to see if they already had?</p>
+  <ol class="answers" type="a">
+    <li>Items that they use frequently</li>
+    <li>Items that are not used regularly</li>
+  </ol>
+</li>
+<li>
+  <p>What are they referring to for ingredients?</p>
+  <ol class="answers" type="a">
+    <li>grocery store ads and coupons</li>
+    <li>a cookbook</li>
+  </ol>
+</li>
+</ol>
+
+</div>
+
+<div class="page-header">
+  <h1>Data and Submission</h1>
+</div>
+
+<p>Training and development data for the task are released <a href="www.google.com">here</a>. </p>
+
+<p>The data structure is self-explanatory: In the XML files, there are <i>instance</i> elements, each of which contains a text and several <i>question</i> elements. Each <i>question</i> element contains 2 <i>answer</i> elements, one of whil is labeled as correct.</p>
+
+<p>The submission is handled via Codalab Worksheets, under <a href="https://worksheets.codalab.org/worksheets/0xcab3b3c22b0641978331e6d39da262c3">this link</a>.</p>
+
+<p>Note that the test data will not be published while the shared tasks are running. Submissions during the practice phase will be displayed on the dev data leaderboard. Submissions during the eval phase will not be displayed on a leaderboard. The test data leaderboard will only be published after the eval phase.</p>
+
+<a name="leaderboards"></a>
+<div class="page-header">
+  <h1>Dev Set Leaderboard</h1>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Model</th>
+            <th>Accuracy</th>
+        </tr>
+    </thead>
+    <tbody id="task1-leaderboard">
+        <tr class="human-row">
+            <td></td>
+            <td>Human Performance</td>
+            <td>0.974</td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="data/leaderboards/leaderboard1.js"></script>
+
+   <div class="footer">
+      <div class="container">
+        <p class="text-muted">Website by Michael Roth, powered by <a href="http://www.getbootstrap.com">Bootstrap</a></p>
+        <br/>
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>
