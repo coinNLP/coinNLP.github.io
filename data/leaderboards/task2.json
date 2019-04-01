@@ -14,7 +14,7 @@
                 {
                     "child_path": "data.json",
                     "parent_path": "",
-                    "parent_uuid": "0x11d7cb1b08b142a3a3b185d086cc43ef"
+                    "parent_uuid": "0x2d57210439d94860a344baae2d901e45"
                 },
                 {
                     "child_path": "predictions.json",
@@ -28,7 +28,7 @@
             "tag": "recocord-1.0-test-eval"
         },
         "host": "https://worksheets.codalab.org",
-        "log_worksheet_uuid": "0xeb176714eac3497b86c76b01cb4cdbf0",
+        "log_worksheet_uuid": "0x33659d4e641941928f04789edba8e51e",
         "make_predictions_public": false,
         "max_leaderboard_size": 10000,
         "max_submissions_per_period": 5,
@@ -43,7 +43,7 @@
             },
             "mimic": [
                 {
-                    "new": "0x11d7cb1b08b142a3a3b185d086cc43ef",
+                    "new": "0x2d57210439d94860a344baae2d901e45",
                     "old": "0x2d57210439d94860a344baae2d901e45"
                 }
             ],
@@ -66,46 +66,46 @@
     "leaderboard": [
         {
             "bundle": {
-                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x11d7cb1b08b142a3a3b185d086cc43ef predictions.json:0xb0e7ab0b48e5486f94b3cf11d01972ba \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x2d57210439d94860a344baae2d901e45 predictions.json:0x5e620868da084caf9aa5abe3eae2b341 \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py data.json predictions.json",
-                "data_hash": "0x8bfa43b7d719590af39012096aebfba9f2fbb890",
+                "data_hash": "0x653db65e2dd4078c5a69032b7acb187ddfb93905",
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0x44844ff8507e4a77a8b406c675be52fb",
+                        "child_uuid": "0x73788bd40efc40eda6fa951619a4b4d3",
                         "parent_name": "evaluate-v1.0.py",
                         "parent_path": "",
                         "parent_uuid": "0x6b674ed880a4430298f40be050f68b9d"
                     },
                     {
                         "child_path": "data.json",
-                        "child_uuid": "0x44844ff8507e4a77a8b406c675be52fb",
-                        "parent_name": "test-v1.0.json",
+                        "child_uuid": "0x73788bd40efc40eda6fa951619a4b4d3",
+                        "parent_name": "dev-v1.0.json",
                         "parent_path": "",
-                        "parent_uuid": "0x11d7cb1b08b142a3a3b185d086cc43ef"
+                        "parent_uuid": "0x2d57210439d94860a344baae2d901e45"
                     },
                     {
                         "child_path": "predictions.json",
-                        "child_uuid": "0x44844ff8507e4a77a8b406c675be52fb",
+                        "child_uuid": "0x73788bd40efc40eda6fa951619a4b4d3",
                         "parent_name": "an_yang-predictions-predict",
                         "parent_path": "",
-                        "parent_uuid": "0xb0e7ab0b48e5486f94b3cf11d01972ba"
+                        "parent_uuid": "0x5e620868da084caf9aa5abe3eae2b341"
                     }
                 ],
-                "id": "0x44844ff8507e4a77a8b406c675be52fb",
+                "id": "0x73788bd40efc40eda6fa951619a4b4d3",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1550330974,
-                    "data_size": 4151,
-                    "description": "{\"submit_id\": \"0x93a5f99e917e4cd58a3cf9d872c537e9\", \"predict_id\": \"0xb0e7ab0b48e5486f94b3cf11d01972ba\", \"submitter_id\": \"0x9af981377baf449b832ac7706edf4173\"}",
+                    "created": 1553958536,
+                    "data_size": 4149,
+                    "description": "{\"submit_id\": \"0x93a5f99e917e4cd58a3cf9d872c537e9\", \"predict_id\": \"0x5e620868da084caf9aa5abe3eae2b341\", \"submitter_id\": \"0x9af981377baf449b832ac7706edf4173\"}",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
-                    "last_updated": 1550332768,
+                    "last_updated": 1553960420,
                     "name": "an_yang-predictions-results",
-                    "remote": "vm-clws-prod-gpuworker-1",
+                    "remote": "vm-clws-prod-gpuworker-12",
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -116,11 +116,11 @@
                     "request_queue": "",
                     "request_time": "",
                     "run_status": "Finished",
-                    "started": 1550332747,
+                    "started": 1553960396,
                     "tags": [
                         "recocord-1.0-test-eval"
                     ],
-                    "time": 14.6418809891
+                    "time": 17.7108538151
                 },
                 "owner": {
                     "id": "0x3e1d2b38d404470da79465002cc81025",
@@ -129,11 +129,11 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "ready",
-                "uuid": "0x44844ff8507e4a77a8b406c675be52fb"
+                "uuid": "0x73788bd40efc40eda6fa951619a4b4d3"
             },
             "scores": {
-                "exact_match": 73.01,
-                "f1": 74.75833320370883
+                "exact_match": 71.6,
+                "f1": 73.6196795137791
             },
             "submission": {
                 "created": 1547213261,
@@ -146,46 +146,46 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x11d7cb1b08b142a3a3b185d086cc43ef predictions.json:0x4e26321c0d5f4959808b0c914ea999d0 \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x2d57210439d94860a344baae2d901e45 predictions.json:0xad92bc22fd0b4ee4848ae17c4c23218b \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py data.json predictions.json",
-                "data_hash": "0xcf3dfa83619b9077116dfbae96e5cb7738d28761",
+                "data_hash": "0xff5702d74c5e9764dbff9fe9767872bb717ef534",
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0xe4202ff824db4e3bb43a25211c0fde5a",
+                        "child_uuid": "0x8b7b2a2317b543bbbc231851343e84c4",
                         "parent_name": "evaluate-v1.0.py",
                         "parent_path": "",
                         "parent_uuid": "0x6b674ed880a4430298f40be050f68b9d"
                     },
                     {
                         "child_path": "data.json",
-                        "child_uuid": "0xe4202ff824db4e3bb43a25211c0fde5a",
-                        "parent_name": "test-v1.0.json",
+                        "child_uuid": "0x8b7b2a2317b543bbbc231851343e84c4",
+                        "parent_name": "dev-v1.0.json",
                         "parent_path": "",
-                        "parent_uuid": "0x11d7cb1b08b142a3a3b185d086cc43ef"
+                        "parent_uuid": "0x2d57210439d94860a344baae2d901e45"
                     },
                     {
                         "child_path": "predictions.json",
-                        "child_uuid": "0xe4202ff824db4e3bb43a25211c0fde5a",
+                        "child_uuid": "0x8b7b2a2317b543bbbc231851343e84c4",
                         "parent_name": "jose_xia-predictions-DCReader-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x4e26321c0d5f4959808b0c914ea999d0"
+                        "parent_uuid": "0xad92bc22fd0b4ee4848ae17c4c23218b"
                     }
                 ],
-                "id": "0xe4202ff824db4e3bb43a25211c0fde5a",
+                "id": "0x8b7b2a2317b543bbbc231851343e84c4",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1543501097,
+                    "created": 1553958529,
                     "data_size": 4151,
-                    "description": "{\"submit_id\": \"0xbc570d206f0b4d858fab3b30269e484c\", \"predict_id\": \"0x4e26321c0d5f4959808b0c914ea999d0\", \"submitter_id\": \"0x4a2f3898ff794aca92a2f96443da48ba\"}",
+                    "description": "{\"submit_id\": \"0xbc570d206f0b4d858fab3b30269e484c\", \"predict_id\": \"0xad92bc22fd0b4ee4848ae17c4c23218b\", \"submitter_id\": \"0x4a2f3898ff794aca92a2f96443da48ba\"}",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
-                    "last_updated": 1543502437,
+                    "last_updated": 1553960077,
                     "name": "jose_xia-predictions-DCReader-results",
-                    "remote": "vm-clws-prod-worker-2",
+                    "remote": "vm-clws-prod-gpuworker-12",
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -196,11 +196,11 @@
                     "request_queue": "",
                     "request_time": "",
                     "run_status": "Finished",
-                    "started": 1543502411,
+                    "started": 1553960010,
                     "tags": [
                         "recocord-1.0-test-eval"
                     ],
-                    "time": 11.0271880627
+                    "time": 14.598143816
                 },
                 "owner": {
                     "id": "0x3e1d2b38d404470da79465002cc81025",
@@ -209,16 +209,16 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "ready",
-                "uuid": "0xe4202ff824db4e3bb43a25211c0fde5a"
+                "uuid": "0x8b7b2a2317b543bbbc231851343e84c4"
             },
             "scores": {
-                "exact_match": 70.49,
-                "f1": 71.98075396825412
+                "exact_match": 69.49,
+                "f1": 71.13846031746044
             },
             "submission": {
                 "created": 1543487152,
                 "description": "DCReader+BERT (single model) (Anonymous)",
-                "num_period_submissions": 0,
+                "num_period_submissions": 1,
                 "num_total_submissions": 1,
                 "public": false,
                 "user_name": "jose_xia"
@@ -226,46 +226,46 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x11d7cb1b08b142a3a3b185d086cc43ef predictions.json:0x747b38bc06b54d94aef129abff064bae \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x2d57210439d94860a344baae2d901e45 predictions.json:0xb9b06fafba444e8db3b489ad62dd8cb1 \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py data.json predictions.json",
-                "data_hash": "0x9b1952f0b05ae76c2ee01e8184393067ab379583",
+                "data_hash": "0xdb108d775cefc548460c5d6d52c10380bc83786f",
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0x3c42c1d8c90a444d9fd9c90c0ac3275a",
+                        "child_uuid": "0xeed88024cae34bbd8f4d935dda85e33f",
                         "parent_name": "evaluate-v1.0.py",
                         "parent_path": "",
                         "parent_uuid": "0x6b674ed880a4430298f40be050f68b9d"
                     },
                     {
                         "child_path": "data.json",
-                        "child_uuid": "0x3c42c1d8c90a444d9fd9c90c0ac3275a",
-                        "parent_name": "test-v1.0.json",
+                        "child_uuid": "0xeed88024cae34bbd8f4d935dda85e33f",
+                        "parent_name": "dev-v1.0.json",
                         "parent_path": "",
-                        "parent_uuid": "0x11d7cb1b08b142a3a3b185d086cc43ef"
+                        "parent_uuid": "0x2d57210439d94860a344baae2d901e45"
                     },
                     {
                         "child_path": "predictions.json",
-                        "child_uuid": "0x3c42c1d8c90a444d9fd9c90c0ac3275a",
+                        "child_uuid": "0xeed88024cae34bbd8f4d935dda85e33f",
                         "parent_name": "szhang-predictions-BERT-Base-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x747b38bc06b54d94aef129abff064bae"
+                        "parent_uuid": "0xb9b06fafba444e8db3b489ad62dd8cb1"
                     }
                 ],
-                "id": "0x3c42c1d8c90a444d9fd9c90c0ac3275a",
+                "id": "0xeed88024cae34bbd8f4d935dda85e33f",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1542463785,
-                    "data_size": 4151,
-                    "description": "{\"submit_id\": \"0xbd0b7039a7da4799a9b0516ef9e15db0\", \"predict_id\": \"0x747b38bc06b54d94aef129abff064bae\", \"submitter_id\": \"0x3e1d2b38d404470da79465002cc81025\"}",
+                    "created": 1553958541,
+                    "data_size": 4152,
+                    "description": "{\"submit_id\": \"0xbd0b7039a7da4799a9b0516ef9e15db0\", \"predict_id\": \"0xb9b06fafba444e8db3b489ad62dd8cb1\", \"submitter_id\": \"0x3e1d2b38d404470da79465002cc81025\"}",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
-                    "last_updated": 1542464378,
+                    "last_updated": 1553960712,
                     "name": "szhang-predictions-BERT-Base-results",
-                    "remote": "vm-clws-prod-worker-1",
+                    "remote": "vm-clws-prod-gpuworker-12",
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -276,11 +276,11 @@
                     "request_queue": "",
                     "request_time": "",
                     "run_status": "Finished",
-                    "started": 1542464359,
+                    "started": 1553960687,
                     "tags": [
                         "recocord-1.0-test-eval"
                     ],
-                    "time": 14.6732969284
+                    "time": 20.901889801
                 },
                 "owner": {
                     "id": "0x3e1d2b38d404470da79465002cc81025",
@@ -289,21 +289,21 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "ready",
-                "uuid": "0x3c42c1d8c90a444d9fd9c90c0ac3275a"
+                "uuid": "0xeed88024cae34bbd8f4d935dda85e33f"
             },
             "scores": {
-                "exact_match": 55.99,
-                "f1": 57.99027507030294
+                "exact_match": 54.04,
+                "f1": 56.065156333174976
             },
             "submission": {
                 "created": 1542395525,
                 "description": "BERT-Base (single model) (JHU [modification of the Google AI implementation]) https://arxiv.org/pdf/1810.04805.pdf",
-                "num_period_submissions": 0,
+                "num_period_submissions": 1,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "szhang"
             }
         }
     ],
-    "updated": 1550334118.644426
+    "updated": 1553961750.923131
 }
