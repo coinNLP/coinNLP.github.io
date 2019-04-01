@@ -158,6 +158,15 @@ ol.answers {
   <h1>Workshop Program</h1>
 </div-->
 
+<div class="page-header">
+  <h1>Mailing list</h1>
+</div>
+
+<p>If you are participating or interested in participating in COIN, we welcome you
+to join the <a href="https://groups.google.com/forum/#!forum/coin-participants">
+COIN mailing list</a> on Google Groups. Follow the link and click "Join Group"
+to join.</p>
+
 <a name="call"></a>
 <div class="page-header">
   <h1>Call for Submissions</h1>
@@ -185,144 +194,43 @@ abstract. We especially welcome the following types of papers:</p>
   <h1>Shared Tasks</h1>
 </div>
 
-<p>This workshop includes two shared tasks on English reading comprehension using commonsense knowledge. In contrast to other machine comprehension tasks and workshops, our focus will be on the inferences over commonsense knowledge about events and participants that are required for text understanding. Participants are encouraged to use any external resources that could improve their systems.</p>
+<p>This workshop includes two shared tasks on English reading comprehension using commonsense knowledge. The first task is a multiple choice reading comprehension task on everyday narrations. The second task is a cloze task on news texts. </p>
 
-<h2>Shared Task 1: Common sense in everyday scenarios</h2>
+<p>In contrast to other machine comprehension tasks and workshops, our focus will be on the inferences over commonsense knowledge about events and participants that are required for text understanding. Participants are encouraged to use any external resources that could improve their systems. Below we give a list of external resources that we expect to be helpful for the tasks.</p>
 
-<p>This task is a revised and extended version of SemEval 2018 Task 11 (<a href="https://competitions.codalab.org/competitions/17184">Ostermann et al., 2018</a>). It presents descriptions of everyday scenarios and asks multiple-choice questions about them.</p>
-<p>Example:</p>
-<div class="task-example">
-<p><strong>Prompt:</strong>
+<p>If you make submissions to one of the shared tasks, they will be added to the development data leaderboard. The test data for both tasks will not be public, but you will have to submit your models so that we can run them on the test data. During the evaluation pahse (first 3 weeks of June), your submissions will count towards the final ranking on the test data. The final leaderboard will be made public only after the evaluation phase ends.</p>
 
-I need to go grocery shopping this weekend so I am in the process of making a
-shopping list. I'll look through my fridge, freezer and cabinets to see what
-I am low on and need to restock that I use regularly; coffee, stevia, mint
-tea bags, paper towels. I'll also check to see if I need anything like
-shampoo or deodorant. When I get the grocery store ads and coupons in the mail
-I will look through to see what is on sale or what I have a coupon for and I
-will plan my meals based on what I can get at a good price. I will then make
-my list organized according to what I can get at what store. I do the majority
-of my shopping at one store so that will be the big chunk of the list but there
-are some things that I have to go to other stores for, I will put that on the
-other side of the paper. Once I have my list made, I'll double check it and
-head out to go shopping.
-</p>
+<p>The development set leaderboard will be updated approx. once a week with all current submissions.</p>
 
-<p><strong>Questions:</strong></p>
-<ol class="questions">
-<li>
-  <p>What did they check to see if they already had?</p>
-  <ol class="answers" type="a">
-    <li>Items that they use frequently</li>
-    <li>Items that are not used regularly</li>
-  </ol>
-</li>
-<li>
-  <p>What are they referring to for ingredients?</p>
-  <ol class="answers" type="a">
-    <li>grocery store ads and coupons</li>
-    <li>a cookbook</li>
-  </ol>
-</li>
-</ol>
+<p><b>If you want to participate or have any questions, please join the <a href="https://groups.google.com/forum/#!forum/coin-participants">google group</a> for participants. We'll post updates in the group, and answer questions on the shared task and workshop.</b></p>
 
-</div>
+<h3><a href="task1.html">Shared Task 1: Commonsense inference in everyday narrations</a></h3>
 
-<p><a href="data/trial/trial-data.xml">Trial data</a> is now available for this task, consisting of a few questions and answers in the task's format.</p>
+<h3><a href="task2.html">Shared Task 2: Commonsense inference in news articles</a></h3>
 
-<h2>Shared Task 2: Common sense in news articles</h2>
+<h3>Commonsense Knowledge Resources</h3>
 
-<p>The second track uses the ReCoRD dataset (<a
-href="https://arxiv.org/abs/1810.12885">Zhang et al., 2018</a>). ReCoRD mines
-its prompts, questions, and answers from news articles in order to collect data
-efficiently and reduce human elicitation bias. It annotates named entities in
-the text and additionally provides some brief bullet points that summarize the
-prompt. It then asks for cloze-style answers, filling in a blank in a sentence
-related to the news article.</p>
-
-<p>Example (from <a href="https://arxiv.org/abs/1810.12885">Zhang et al.</a>):</p>
-<div class="task-example">
-<p><strong>Prompt:</strong>
-    (<span class="ent">CNN</span>) -- A lawsuit has been filed claiming that the
-    iconic <span class="ent">Led Zeppelin</span> song "<span class="ent">Stairway to Heaven</span>" was far
-    from original. The suit, filed on May 31 in the <span class="ent">United
-    States District Court Eastern District of Pennsylvania</span>,
-    was brought by the estate of the late musician <span class="ent">Randy
-    California</span> against the surviving members of <span class="ent">Led
-    Zeppelin</span> and their record label. The copyright
-    infringement case alleges that the <span class="ent">Zeppelin</span> song was
-    taken from the single "<span class="ent">Taurus</span>" by the 1960s band <span class="ent">Spirit</span>,
-    for whom <span class="ent">California</span> served as lead guitarist. "Late in
-    1968, a then new band named <span class="ent">Led Zeppelin</span> began
-    touring in the <span class="ent">United States</span>, opening for <span class="ent">Spirit</span>," the suit
-    states. "It was during this time that <span class="ent">Jimmy Page</span>, <span class="ent">Led
-    Zeppelin</span>'s guitarist, grew familiar with '<span class="ent">Taurus</span>' and the
-    rest of <span class="ent">Spirit</span>'s catalog. <span class="ent">Page</span> stated in interviews that he
-    found <span class="ent">Spirit</span> to be 'very good' and that the band's
-    performances struck him 'on an emotional level.' "
-</p>
-<p><strong>Summary points:</strong></p>
+<h4>Commonsense Knowledge Bases</h4>
 <ul>
-<li>Suit claims similarities between two songs</li>
-<li><span class="ent">Randy California</span> was guitarist for the group <span class="ent">Spirit</span></li>
-<li><span class="ent">Jimmy Page</span> has called the accusation "ridiculous"</li>
+  <li>ConceptNet [<a href="http://lrec-conf.org/proceedings/lrec2012/pdf/1072_Paper.pdf">paper</a>|<a href="https://www.http://conceptnet.io/">data</a>]</li>
+  <li>WebChild [<a href="http://people.mpi-inf.mpg.de/~ntandon/papers/tandon-acl2017-demo.pdf">paper</a>|<a href="https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/webchild/">web</a>]</li>
+  <li>NELL [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/10049/9557">paper</a>|<a href="http://rtw.ml.cmu.edu/rtw/">web</a>]</li>
+  <li>ACL list of RTE Knowledge Resources [<a href="https://aclweb.org/aclwiki/RTE_Knowledge_Resources">web</a>]</li>
 </ul>
-<p><strong>Query:</strong> According to claims in the suit, "Parts of 'Stairway to
-Heaven,' instantly recognizable to the music fans across
-the world, sound almost identical to significant portions
-of ‘<span class="blank">________</span>.’”</p>
-</div>
 
-<div class="page-header">
-  <h1>Mailing list</h1>
-</div>
+<h4>Script Knowledge Bases</h4>
+<ul>
+  <li>DeScript [<a href="http://www.lrec-conf.org/proceedings/lrec2016/pdf/913_Paper.pdf">paper</a>|<a href="https://www.hidrive.strato.com/lnk/osATHAmv">data</a>]</li>
+  <li>RKP&nbsp;[<a href="http://www.coli.uni-saarland.de/projects/smile/docs/scripts-10.pdf">paper</a>|<a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">data</a>]</li>
+  <li>OMCS stories [<a href="http://web.media.mit.edu/~lieber/Teaching/Common-Sense-Course-02/Open-Mind-AAAI2002.pdf">paper</a>|<a href="https://www.hidrive.strato.com/lnk/bqSpUvas">data</a>|<a href="https://www.media.mit.edu/research/groups/5994/open-mind-common-sense">web</a>]</li>
+</ul>
+<h4>Script Knowledge Representations</h4>
+<ul>
+  <li>narrative chains&nbsp;[<a href="https://nlp.stanford.edu/pubs/narrative-chains08.pdf">paper1</a>&nbsp;<a href="http://aclweb.org/anthology/P/P09/P09-1068.pdf">paper2</a>|<a href="https://www.usna.edu/Users/cs/nchamber/data/schemas/acl09/">data</a>]</li>
+  <li>event embeddings [<a href="http://aclweb.org/anthology/W14-1606">paper</a>]</li>
+  <li>event paraphrase sets [<a href="http://www.aclweb.org/anthology/W/W17/W17-09.pdf#page=13">paper</a>]</li>
+</ul>
 
-<p>If you are participating or interested in participating in COIN, we welcome you
-to join the <a href="https://groups.google.com/forum/#!forum/coin-participants">
-COIN mailing list</a> on Google Groups. Follow the link and click "Join Group"
-to join.</p>
-
-<!-- UNCOMMENT WHEN LEADERBOARDS ARE MADE PUBLIC
-<a name="leaderboards"></a>
-<div class="page-header">
-  <h1>Dev Set Leaderboards</h1>
-</div>
-<h2>Task 1 - Everyday Scenarios</h2>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Rank</th>
-            <th>Model</th>
-            <th>Accuracy</th>
-        </tr>
-    </thead>
-    <tbody id="task1-leaderboard">
-        <tr class="human-row">
-            <td></td>
-            <td>Human Performance</td>
-            <td>0.974</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>Task 2 - News Articles</h2>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Rank</th>
-            <th>Model</th>
-            <th>F1</th>
-        </tr>
-    </thead>
-    <tbody id="task2-leaderboard">
-        <tr class="human-row">
-            <td></td>
-            <td>Human Performance</td>
-            <td>0.917</td>
-        </tr>
-    </tbody>
-</table>
--->
 <a name="dates"></a>
 <div class="page-header">
   <h1>Tentative Dates</h1>
@@ -343,6 +251,7 @@ All deadlines refer to 11:59pm Pacific Daylight Savings Time (UTC/GMT -7 hours).
 
 
 <a name="committee"></a>
+<a name="organizers"></a>
 <div class="page-header">
   <h1>Organizers</h1>
 </div>
@@ -384,8 +293,8 @@ All deadlines refer to 11:59pm Pacific Daylight Savings Time (UTC/GMT -7 hours).
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="data/leaderboards/leaderboard1.js"></script>
-<script src="data/leaderboards/leaderboard2.js"></script>
+<!--<script src="data/leaderboards/leaderboard1.js"></script>
+<script src="data/leaderboards/leaderboard2.js"></script>-->
 
    <div class="footer">
       <div class="container">
