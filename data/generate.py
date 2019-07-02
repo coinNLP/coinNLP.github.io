@@ -1,5 +1,7 @@
 import json, sys
 
+# this file generates leaderboard javascript files from the json output of codalab
+
 def generateJavaScriptForElement1(el, idx):
 	js = 'var tr = document.createElement("tr");\nvar td1 = document.createElement("td");\nvar td2 = document.createElement("td");\nvar td3 = document.createElement("td");\ntr.appendChild(td1);\ntr.appendChild(td2);\ntr.appendChild(td3);\ntab.appendChild(tr)'
 	js += '\ntd1.innerHTML = "' + str(idx) + '";'
