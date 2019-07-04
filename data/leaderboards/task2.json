@@ -66,6 +66,166 @@
     "leaderboard": [
         {
             "bundle": {
+                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x2d57210439d94860a344baae2d901e45 predictions.json:0xcedc956828f048ceb2f7fdc008312e33 \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py data.json predictions.json",
+                "data_hash": "0x653db65e2dd4078c5a69032b7acb187ddfb93905",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x2afdc0fd466d46369ebf4ce948c876c1",
+                        "parent_name": "evaluate-v1.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b674ed880a4430298f40be050f68b9d"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x2afdc0fd466d46369ebf4ce948c876c1",
+                        "parent_name": "dev-v1.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x2d57210439d94860a344baae2d901e45"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x2afdc0fd466d46369ebf4ce948c876c1",
+                        "parent_name": "ginobili-record-predictions-predict-run-record",
+                        "parent_path": "",
+                        "parent_uuid": "0xcedc956828f048ceb2f7fdc008312e33"
+                    }
+                ],
+                "id": "0x73788bd40efc40eda6fa951619a4b4d3",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553958536,
+                    "data_size": 4149,
+                    "description": "{\"submit_id\": \"0x93a5f99e917e4cd58a3cf9d872c537e9\", \"predict_id\": \"0x5e620868da084caf9aa5abe3eae2b341\", \"submitter_id\": \"0x9af981377baf449b832ac7706edf4173\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1562262273,
+                    "name": "ginobili-record-predictions-results",
+                    "remote": "vm-clws-prod-gpuworker-12",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1562262273,
+                    "tags": [
+                        "recocord-1.0-test-eval"
+                    ],
+                    "time": 17.7108538151
+                },
+                "owner": {
+                    "id": "0x3e1d2b38d404470da79465002cc81025",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x73788bd40efc40eda6fa951619a4b4d3"
+            },
+            "scores": {
+                "exact_match": 76.18,
+                "f1": 77.68
+            },
+            "submission": {
+                "created": 1562262273,
+                "description": "LM_pretrained (single model) (paht)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "ginobili"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x2d57210439d94860a344baae2d901e45 predictions.json:0xcedc956828f048ceb2f7fdc008312e33 \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py data.json predictions.json",
+                "data_hash": "0x653db65e2dd4078c5a69032b7acb187ddfb93905",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x2afdc0fd466d46369ebf4ce948c876c1",
+                        "parent_name": "evaluate-v1.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b674ed880a4430298f40be050f68b9d"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x2afdc0fd466d46369ebf4ce948c876c1",
+                        "parent_name": "dev-v1.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x2d57210439d94860a344baae2d901e45"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x2afdc0fd466d46369ebf4ce948c876c1",
+                        "parent_name": "ginobili-record-predictions-predict-run-record",
+                        "parent_path": "",
+                        "parent_uuid": "0xcedc956828f048ceb2f7fdc008312e33"
+                    }
+                ],
+                "id": "0x73788bd40efc40eda6fa951619a4b4d3",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553958536,
+                    "data_size": 4149,
+                    "description": "{\"submit_id\": \"0x93a5f99e917e4cd58a3cf9d872c537e9\", \"predict_id\": \"0x5e620868da084caf9aa5abe3eae2b341\", \"submitter_id\": \"0x9af981377baf449b832ac7706edf4173\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1562262273,
+                    "name": "record-predictions-SKG-BERT-predict-predict",
+                    "remote": "vm-clws-prod-gpuworker-12",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1562262273,
+                    "tags": [
+                        "recocord-1.0-test-eval"
+                    ],
+                    "time": 17.7108538151
+                },
+                "owner": {
+                    "id": "0x3e1d2b38d404470da79465002cc81025",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x73788bd40efc40eda6fa951619a4b4d3"
+            },
+            "scores": {
+                "exact_match": 70.94,
+                "f1": 71.55
+            },
+            "submission": {
+                "created": 1562262273,
+                "description": "SKG-BERT (single model) (Anonymous)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "record"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0x6b674ed880a4430298f40be050f68b9d data.json:0x2d57210439d94860a344baae2d901e45 predictions.json:0x5e620868da084caf9aa5abe3eae2b341 \"python evaluate.py data.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py data.json predictions.json",
@@ -132,12 +292,12 @@
                 "uuid": "0x73788bd40efc40eda6fa951619a4b4d3"
             },
             "scores": {
-                "exact_match": 71.6,
+                "exact_match": 71.60,
                 "f1": 73.6196795137791
             },
             "submission": {
                 "created": 1547213261,
-                "description": "Knowledge-enhanced BERT (single model) (Anonymous) ",
+                "description": "KT-NET (single model) (Baidu NLP) ",
                 "num_period_submissions": 1,
                 "num_total_submissions": 1,
                 "public": false,
