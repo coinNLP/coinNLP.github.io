@@ -537,7 +537,7 @@
             },
             "submission": {
                 "created": 1562261846,
-                "description": "",
+                "description": "LM_pretrained (single model) (paht)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 0,
                 "public": null,
@@ -785,5 +785,5 @@
             }
         }
     ],
-    "updated": 1564110660.841749
+    "updated": 1564111726.113643
 }
