@@ -90,7 +90,7 @@ tr.appendChild(td3);
 tr.appendChild(td4);
 tab.appendChild(tr)
 td1.innerHTML = "6";
-td2.innerHTML = "";
+td2.innerHTML = "LM_pretrained (single model) (paht)";
 td3.innerHTML = "76.79";
 
 td4.innerHTML = "78.16";
