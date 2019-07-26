@@ -14,7 +14,7 @@
                 {
                     "child_path": "gold.txt",
                     "parent_path": "",
-                    "parent_uuid": "0x75e282c57ca746b588f3ecbd18ae6562"
+                    "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
                 },
                 {
                     "child_path": "pred.txt",
@@ -43,7 +43,7 @@
             },
             "mimic": [
                 {
-                    "new": "0x5b303169f3bc45e297e32584e3258587",
+                    "new": "0x6ae26dd0d05a4402966d1767625fc2bb",
                     "old": "0x5b303169f3bc45e297e32584e3258587"
                 }
             ],
@@ -62,46 +62,46 @@
     "leaderboard": [
         {
             "bundle": {
-                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x75e282c57ca746b588f3ecbd18ae6562 pred.txt:0x6acf5146d8ab44d6bf605d84f2b6a41f \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x6d39d11f5f7245838b529b7a273be053 \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py --gold gold.txt --pred pred.txt",
-                "data_hash": "0x2b46945e67fba4ef9806af02aae2777a9e1c8ee0",
+                "data_hash": "0x06b5b9bd14bd1cf11a2bc5570bd19b3f1c97b247",
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0x625de28da1964f588238b660e45ba9aa",
+                        "child_uuid": "0x95f0ca37020d46d4b1229f8ffc12ba11",
                         "parent_name": "evaluation.py",
                         "parent_path": "",
                         "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
                     },
                     {
                         "child_path": "gold.txt",
-                        "child_uuid": "0x625de28da1964f588238b660e45ba9aa",
-                        "parent_name": "dev.answer.txt",
+                        "child_uuid": "0x95f0ca37020d46d4b1229f8ffc12ba11",
+                        "parent_name": "test.answer.txt",
                         "parent_path": "",
-                        "parent_uuid": "0x75e282c57ca746b588f3ecbd18ae6562"
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
                     },
                     {
                         "child_path": "pred.txt",
-                        "child_uuid": "0x625de28da1964f588238b660e45ba9aa",
-                        "parent_name": "coin-predictions-baseline-attentive-reader-predict",
+                        "child_uuid": "0x95f0ca37020d46d4b1229f8ffc12ba11",
+                        "parent_name": "jerseyz-prediction-best-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x6acf5146d8ab44d6bf605d84f2b6a41f"
+                        "parent_uuid": "0x6d39d11f5f7245838b529b7a273be053"
                     }
                 ],
-                "id": "0x625de28da1964f588238b660e45ba9aa",
+                "id": "0x95f0ca37020d46d4b1229f8ffc12ba11",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1553689642,
-                    "data_size": 4124,
-                    "description": "{\"submit_id\": \"0x416f97c370c543bdac3e0c3d5172a3c2\", \"predict_id\": \"0x6acf5146d8ab44d6bf605d84f2b6a41f\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
+                    "created": 1563721788,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0x8fbe36f125964213bf4c52a178bbe526\", \"predict_id\": \"0x6d39d11f5f7245838b529b7a273be053\", \"submitter_id\": \"0xcd6bbb3cbab04541a57942d3cddd65b4\"}",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
-                    "last_updated": 1553689991,
-                    "name": "coin-predictions-baseline-attentive-reader-results",
-                    "remote": "vm-clws-prod-gpuworker-1",
+                    "last_updated": 1563724342,
+                    "name": "jerseyz-prediction-best-results",
+                    "remote": "vm-clws-prod-worker-2",
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -112,11 +112,11 @@
                     "request_queue": "",
                     "request_time": "",
                     "run_status": "Finished",
-                    "started": 1553689742,
+                    "started": 1563724233,
                     "tags": [
                         "COIN-WS-Evaluation"
                     ],
-                    "time": 14.86413908
+                    "time": 9.07270097733
                 },
                 "owner": {
                     "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
@@ -125,20 +125,571 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "ready",
-                "uuid": "0x625de28da1964f588238b660e45ba9aa"
+                "uuid": "0x95f0ca37020d46d4b1229f8ffc12ba11"
             },
             "scores": {
-                "score": 0.692079207920792
+                "score": 0.9058171745152355
+            },
+            "submission": {
+                "created": 1563677549,
+                "description": "Multi-Finetune-XLnet  (single model) (PingAn Smart Health and SJTU)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "jerseyz"
+            }
+        },
+		{
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x54181f1e5eee417a86373b18e9499a57 \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x600e1a65503645099f0a116dbf4f40e1",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x600e1a65503645099f0a116dbf4f40e1",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x600e1a65503645099f0a116dbf4f40e1",
+                        "parent_name": "Prakharsharma-predictions-Bert_xlnet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x54181f1e5eee417a86373b18e9499a57"
+                    }
+                ],
+                "id": "0x600e1a65503645099f0a116dbf4f40e1",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1563745426,
+                    "description": "{\"submit_id\": \"0xf1c0ab74191e4faea697c2c4f7715c99\", \"predict_id\": \"0x54181f1e5eee417a86373b18e9499a57\", \"submitter_id\": \"0x8f31e90390bb4123bf1b50ca71eca787\"}",
+                    "failure_message": "Failed to download dependency pred.txt: ",
+                    "last_updated": 1563973244,
+                    "name": "Prakharsharma-predictions-Bert_xlnet-results",
+                    "remote": "vm-clws-prod-gpuworker-4",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1563973233,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 9.68811893463
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "failed",
+                "uuid": "0x600e1a65503645099f0a116dbf4f40e1"
+            },
+            "scores": {
+                "score": 0.9049861495844875
+            },
+            "submission": {
+                "created": 1563740468,
+                "description": "(Finetuned BERT-Large + Xlnet-Large)(ensemble)(IIT KGP)(Colab TPU){using only train data, not dev}",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "Prakharsharma"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0xd544fdeb8ad44f78874b5f6edc2ca62d \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0x7fc4b91f34c704dc6e03f506a5d42d77d9538d31",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x9acbe4edb19e4c88ab6e87d472906e65",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x9acbe4edb19e4c88ab6e87d472906e65",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x9acbe4edb19e4c88ab6e87d472906e65",
+                        "parent_name": "zsl123-predictions-dmn-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xd544fdeb8ad44f78874b5f6edc2ca62d"
+                    }
+                ],
+                "id": "0x9acbe4edb19e4c88ab6e87d472906e65",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1562388221,
+                    "data_size": 4124,
+                    "description": "{\"submit_id\": \"0x59d62620778c44c6a0fbd41222f82f60\", \"predict_id\": \"0xd544fdeb8ad44f78874b5f6edc2ca62d\", \"submitter_id\": \"0x107fc6de5a3546c1987e5111bddce105\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1562392106,
+                    "name": "zsl123-predictions-dmn-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1562392081,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 17.8382520676
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x9acbe4edb19e4c88ab6e87d472906e65"
+            },
+            "scores": {
+                "score": 0.868421052631579
+            },
+            "submission": {
+                "created": 1561010642,
+                "description": "dmn (single model) (SJTU)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "zsl123"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x113841de301f41be8b81d184e27f53ea \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0x80d6a2026d12ad7ed0394102a6d3808635157799",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x93b21ca820664e4b9bdba3776022a21b",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x93b21ca820664e4b9bdba3776022a21b",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x93b21ca820664e4b9bdba3776022a21b",
+                        "parent_name": "luckyliu-predictions-multi-ft-bert-1-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x113841de301f41be8b81d184e27f53ea"
+                    }
+                ],
+                "id": "0x93b21ca820664e4b9bdba3776022a21b",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1562388231,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0xd5e974ed3547443b9af994e4d9cc9abe\", \"predict_id\": \"0x113841de301f41be8b81d184e27f53ea\", \"submitter_id\": \"0x37b46ef5f0364a3eaf98bde3bfb03620\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1562393001,
+                    "name": "luckyliu-predictions-multi-ft-bert-1-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1562392980,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 14.6196460724
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x93b21ca820664e4b9bdba3776022a21b"
+            },
+            "scores": {
+                "score": 0.8421052631578947
+            },
+            "submission": {
+                "created": 1561016914,
+                "description": "Multi-Finetune BERT (single model) (Beijing Language and Culture University) https://github.com/liuchunhuahua/Commonsense-Reading-Comprehension/blob/master/README.md",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "luckyliu"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x089ffacb2451489fa12a3d9731446e1a \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0x9c0fd0791a12e8b4d8aedaf40490f1de332a4ed2",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x915f2ce2fe184d9cbb0dbd5dddac1ee1",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x915f2ce2fe184d9cbb0dbd5dddac1ee1",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x915f2ce2fe184d9cbb0dbd5dddac1ee1",
+                        "parent_name": "jexeld-predictions-xlab-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x089ffacb2451489fa12a3d9731446e1a"
+                    }
+                ],
+                "id": "0x915f2ce2fe184d9cbb0dbd5dddac1ee1",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1563809093,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0x8a12319efb9747c399e6020439b4b96e\", \"predict_id\": \"0x089ffacb2451489fa12a3d9731446e1a\", \"submitter_id\": \"0xaedeedb00320434f9d42a418375313fe\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1563919877,
+                    "name": "jexeld-predictions-xlab-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1563919846,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 24.031897068
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x915f2ce2fe184d9cbb0dbd5dddac1ee1"
+            },
+            "scores": {
+                "score": 0.8074792243767313
+            },
+            "submission": {
+                "created": 1563497619,
+                "description": "Knowledge Graph Fusion BERT (single model) (University of Washington)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "jexeld"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x0e4e968fbe7343b386555e6f4d2d84aa \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0xef7b2930ca39bb05f8bfc9c903f9694ef94b17de",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x1feb492bb7184481a6531d7f7acf21f8",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x1feb492bb7184481a6531d7f7acf21f8",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x1feb492bb7184481a6531d7f7acf21f8",
+                        "parent_name": "yashj-predictions-conbert-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x0e4e968fbe7343b386555e6f4d2d84aa"
+                    }
+                ],
+                "id": "0x1feb492bb7184481a6531d7f7acf21f8",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1563334434,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0x4cac352eeb9d4ff2b873daf5f6eb2824\", \"predict_id\": \"0x0e4e968fbe7343b386555e6f4d2d84aa\", \"submitter_id\": \"0x481c88ee086d4fc4b270112be089807d\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1563335555,
+                    "name": "yashj-predictions-conbert-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1563335530,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 17.8897809982
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x1feb492bb7184481a6531d7f7acf21f8"
+            },
+            "scores": {
+                "score": 0.7332409972299169
+            },
+            "submission": {
+                "created": 1562438305,
+                "description": "Bert_ConceptNet (Single) (IIT Kharagpur)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "yashj"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x2259416eea084ad3a2c0c0819168b6fc \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0x619f2b7c42202c1892e9c214426606ffc3c6ea4d",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xb19669a0b62947d59f7ca4d397c0bce2",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0xb19669a0b62947d59f7ca4d397c0bce2",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0xb19669a0b62947d59f7ca4d397c0bce2",
+                        "parent_name": "NANs_of_life-predictions-bert3-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x2259416eea084ad3a2c0c0819168b6fc"
+                    }
+                ],
+                "id": "0xb19669a0b62947d59f7ca4d397c0bce2",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1562644000,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0xe1f07dea47194ceb8efcfa87954311fa\", \"predict_id\": \"0x2259416eea084ad3a2c0c0819168b6fc\", \"submitter_id\": \"0xcf1f2cd6cf0943148ad1b0c7bb12854a\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1562687829,
+                    "name": "NANs_of_life-predictions-bert3-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1562687481,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 341.08417511
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xb19669a0b62947d59f7ca4d397c0bce2"
+            },
+            "scores": {
+                "score": 0.7313019390581718
+            },
+            "submission": {
+                "created": 1562617900,
+                "description": "BERTFT (Single) (IIT Kharagpur)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "NANs_of_life"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x199da9122a8344268cc72c0f3c738c13 gold.txt:0x4ebb3259bfca483fa432e0d71665a399 pred.txt:0x9a1290b995ef44e685702f91e3e0c75c \"python evaluate.py --gold gold.txt --pred pred.txt\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py --gold gold.txt --pred pred.txt",
+                "data_hash": "0x3a14c9bcc101d2644498abfc8ece0a06e6495bdd",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x4885f6adaa0d4bf29e97f8581baacced",
+                        "parent_name": "evaluation.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x199da9122a8344268cc72c0f3c738c13"
+                    },
+                    {
+                        "child_path": "gold.txt",
+                        "child_uuid": "0x4885f6adaa0d4bf29e97f8581baacced",
+                        "parent_name": "test.answer.txt",
+                        "parent_path": "",
+                        "parent_uuid": "0x4ebb3259bfca483fa432e0d71665a399"
+                    },
+                    {
+                        "child_path": "pred.txt",
+                        "child_uuid": "0x4885f6adaa0d4bf29e97f8581baacced",
+                        "parent_name": "coin-predictions-baseline-attentive-reader-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x9a1290b995ef44e685702f91e3e0c75c"
+                    }
+                ],
+                "id": "0x4885f6adaa0d4bf29e97f8581baacced",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1562388252,
+                    "data_size": 4125,
+                    "description": "{\"submit_id\": \"0x416f97c370c543bdac3e0c3d5172a3c2\", \"predict_id\": \"0x9a1290b995ef44e685702f91e3e0c75c\", \"submitter_id\": \"0xb7dda1b81856464bbb8ac5c340352a5c\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1562388751,
+                    "name": "coin-predictions-baseline-attentive-reader-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1562388613,
+                    "tags": [
+                        "COIN-WS-Evaluation"
+                    ],
+                    "time": 30.4036290646
+                },
+                "owner": {
+                    "id": "0xb7dda1b81856464bbb8ac5c340352a5c",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x4885f6adaa0d4bf29e97f8581baacced"
+            },
+            "scores": {
+                "score": 0.6512465373961219
             },
             "submission": {
                 "created": 1553688794,
                 "description": "ATTENTIVE READER BASELINE (single model)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "coin"
             }
         }
     ],
-    "updated": 1553690360.050337
+    "updated": 1563980297.367386
 }
