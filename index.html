@@ -73,13 +73,12 @@ ol.answers {
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <!--li><a href="#speakers">Invited Speakers</a></li-->
-            <li><a href="#call">Call</a></li>
+            <li><a href="#speakers">Invited Speakers</a></li>
+	    <li><a href="#program">Programme</a></li>
+            <!--li><a href="#call">Call</a></li-->
             <li><a href="#task">Shared Tasks</a></li>
             <!--<li><a href="#leaderboards">Leaderboards</a></li>-->
             <li><a href="#dates">Dates</a></li>
-            <li><a href="#speakers">Invited Speakers</a></li>
-            <!--li><a href="#accepted">Papers</a></li-->
             <li><a href="#organizers">Organizers&amp;Committee</a></li>
            </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -113,50 +112,99 @@ ol.answers {
 
 <p>The workshop will also include two shared tasks on common-sense machine reading comprehension in English, one based on everyday scenarios and one based on news events. See <a href="#task">Shared Tasks</a> for more details.</p>
 
-<!--a name="speakers"></a>
-<br/>
+<div class="page-header">
+  <h1>Mailing list</h1>
+</div>
+
+<p>If you are participating or interested in participating in COIN, we welcome you
+  to join the <a href="https://groups.google.com/forum/#!forum/coin-participants">
+    COIN mailing list</a> on Google Groups. Follow the link and click "Join Group"
+  to join.</p>
+
+<a name="speakers"></a>
 <div class="page-header">
   <h1>Invited Speakers</h1>
 </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">
-		To be confirmed
-              </h2>
-            </div>
-            <div class="panel-body">
 
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">
-		To be confirmed
-              </h2>
-            </div>
-            <div class="panel-body">
+<ul>
+<li><p><h4><a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a>: <strong>Commonsense Intelligence: Cracking the Longstanding Challenge in AI</strong></h4></p>
+<p>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#yejinabs" aria-expanded="false" aria-controls="collapseExample">
+    Abstract
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#yejinbio" aria-expanded="false" aria-controls="collapseExample">
+    Bio
+  </button>
+</p>
+<div class="collapse" id="yejinabs">
+  <div class="card card-body">
+    <p>Despite considerable advances in deep learning, AI remains to be narrow and brittle. One fundamental limitation comes from its lack of commonsense intelligence: reasoning about everyday situations and events, which in turn, requires knowledge about how the physical and social world works. In this talk, I will share some of our recent efforts that attempt to crack commonsense intelligence. </p>
+    <p>
+    First, I will introduce ATOMIC, the atlas of everyday commonsense knowledge and reasoning, organized as a graph of 877k if-then rules (e.g., &ldquo;if X pays Y a compliment, then Y will likely return the compliment&rdquo;). Next, I will introduce COMET, our deep neural networks that can learn from and generalize beyond the ATOMIC commonsense graph. Finally, I will present RAINBOW, a collection of seven benchmarks that aims to cover a wide spectrum of commonsense intelligence from natural language inference to adductive reasoning to visual commonsense reasoning. I will conclude the talk by discussing major open research questions, including the importance of algorithmic solutions to reduce incidental biases in data that can lead to overestimation of true AI capabilities.</p>
+  </div>
+</div>
+<div class="collapse" id="yejinbio">
+  <div class="card card-body">
+    Yejin Choi is an associate professor at the Paul G. Allen School of Computer Science & Engineering at the University of Washington and also a senior research manager at AI2  overseeing the project Mosaic. Her research interests include language grounding with vision, physical and social commonsense knowledge, language generation with long-term coherence, conversational AI, and AI for social good. She was a recepient of Borg Early Career Award (BECA) in 2018, among the IEEE’s AI Top 10 to Watch in 2015, a co-recipient of the Marr Prize at ICCV 2013, and a faculty advisor for the Sounding Board team that won the inaugural Alexa Prize Challenge in 2017.  Her work on detecting deceptive reviews, predicting the literary success, and interpreting bias and connotation has been featured by numerous media outlets including NBC News for New York, NPR Radio, New York Times, and Bloomberg Business Week. She received her Ph.D. in Computer Science from Cornell University.
+  </div>
+</div>
+</li>
+<li><p><h4><a href="http://www.science.auckland.ac.nz/people/profile/m-witbrock">Michael Witbrock</a>: <strong>Learning to Reason: from Question Answering to Problem Solving 
 
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">
-                Additional speaker(s)</h2><i>to be confirmed</i>
-            </div>
-            <div class="panel-body">
-              TBA
-            </div>
-        </div>
-    </div-->
+</strong></h4></p>
+<p>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#michaelabs" aria-expanded="false" aria-controls="collapseExample">
+    Abstract
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#michaelbio" aria-expanded="false" aria-controls="collapseExample">
+    Bio
+  </button>
+</p>
+<div class="collapse" id="michaelabs">
+  <div class="card card-body">
+    Recent advances in Machine Learning applied to Natural Language Processing have resulted in systems with quite impressive scores on Question-Answering tests in text and simple visual domains. Similarly, Google Assistant and other similar systems are performing quite well in answering real questions by answer extraction. This progress is real, but it is limited in some important respects: the systems typically have worked by identifying a passage span to serve as an answer; more recently, in &ldquo;Multi-hop&rdquo; QA, they have started to work by forming a short linear chain of extracted relations from question to answer.  This falls significantly short of human-problem solving, including question-answering: it does not recursively decompose problems for solution, it does not follow that decomposition to assemble answers, and it does not store and apply salient background knowledge for decomposition, partial solution, or answer composition.  Although it's at the early stage, the aim of our Broad AI Lab is to learn from the far-from-general capabilities of symbolic AI to  extend our reach, especially in problem-solving over text, by applying learning to bridge these current short-falls. In this talk , I'll try to characterise the problem-solving problem and the baseline state-of-the-art, describe some preliminary previous work done with the Learning to Reason team at IBM Research, and sketch a programme towards broader, learning-based, quasi-symbolic AI. We hope this programme will extend the reach of AI-based problem solving, and especially question-answering.
+  </div>
+</div>
+<div class="collapse" id="michaelbio">
+  <div class="card card-body">
+    Michael Witbrock is a professor of computer science at The University of Auckland, building a research group, the Broad AI Lab, integrating machine learning, reasoning and natural language understanding, with an additional focus on maximizing the near-term benefit of AI to NZ entrepreneurs and business, and more generally achieving the best social and civilizational impacts of increasingly powerful AI.  Prof. Witbrock's PhD is in Computer Science from Carnegie Mellon, and he holds a BSc(Hons) in Psychology from Otago. Before joining the University, he was a Distinguished Research Staff Member and manager of the Reasoning group at IBM T J Watson Research Center in Yorktown Heights, NY.
+  </div>
+</div>
+</li>
+</ul>
 
-<!--a name="program"></a>
+
+<a name="program"></a>
 <div class="page-header">
   <h1>Workshop Program</h1>
-</div-->
+  
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <td>9:00</td>
+      <td>Opening <!--sup> <a href="pdfs/xxx.pdf">[PDF]</a></sup--></td>
+    </tr>
+    <tr>
+      <td class="info">9:10</td>
+      <td>
+        <b>Invited talk</b><br/>
+	Commonsense Intelligence---Cracking the Longstanding Challenge in AI <br/>
+        <i>Yejin Choi</i></td>
+    </tr>
+    <tr>
+      <td class="success">10:10</td>
+      <td>
+	Understanding Commonsense Inference Aptitude of Deep Contextual Representations
+	<br/><i>Jeff Da and Jungo Kasai</i>
+      </td>
+    </tr>
+    <tr>
+      <td>10:30</td>
+      <td><strong>Coffee break</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <div class="page-header">
   <h1>Mailing list</h1>
@@ -251,7 +299,7 @@ abstract. We especially welcome the following types of papers:</p>
 
 All deadlines refer to 11:59pm GMT -12 hours ("anywhere in the world").
 
-<a name="speakers"></a>
+<!--a name="speakers"></a>
 <div class="page-header">
   <h1>Invited Speakers</h1>
 </div>
@@ -301,7 +349,7 @@ All deadlines refer to 11:59pm GMT -12 hours ("anywhere in the world").
   </div>
 </div>
 </li>
-</ul>
+</ul-->
 
 <a name="organizers"></a>
 <div class="page-header">
